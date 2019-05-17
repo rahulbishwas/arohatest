@@ -1,0 +1,266 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Live extension</h3>
+</body>
+</html><!-- <!DOCTYPE html>
+    <html>
+    <body> 
+    
+    <h1>A Web Page</h1>
+    <p id="demo">A Paragraph</p>
+    
+    <button type="button" onclick="myFunction()">Try it</button>
+    
+    <script>
+    function myFunction() {
+     document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+    </script>
+    
+    </body>
+    </html> -->
+    
+    
+    
+    
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+     
+    <style>
+    .intro{
+        font-size: 10px;
+    }
+    
+    </style>
+    
+    
+    
+    </head>
+    <body>
+    
+    
+        <p  class="intro">Javascript</p>
+    <button  onclick="changefont()">Click</button>
+      
+        <script>
+        //////////////promt///////////////
+        //  var a=parseInt(prompt("Enter the 1st value"));
+        //  var b =parseInt(prompt("Enter the 2nd value"))
+        //  console.log(a+b);
+    
+        // var x=doucment.querySelectorAll("p.intro");
+    
+    
+        // function changefont(){
+        //     var x=document.getElementByClass("intro")
+    
+        //  x[0].style.fontSize="20px";
+    
+    
+        // }
+    
+    ////////////////
+    function changefont () {
+        document.getElementsByClassName("intro")[0].style.fontSize="30px";
+    }
+        </script>    
+    </body>
+    </html> -->
+    
+    
+    
+    
+    <!-- <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body> -->
+    
+      <!-- ////////////////Tag Name////////////
+        <p  id="demo">Change the javascript text</p>
+    
+      <button  onclick="callFunction()">Click</button>
+    
+        <script>
+    
+    
+    function callFunction(){
+    
+    
+    
+        
+            var x=document.getElementById("demo").innerHTML="Text Changed";
+    
+    }
+        </script> -->
+    
+    
+        <!-- //////////////By Class Name//////////////// -->
+    
+        <!-- <p  class="demo">Change the javascript text</p>
+    
+        <button  onclick="callFunction()">Click</button>
+      
+          <script>
+      
+      
+      function callFunction(){
+      
+      
+      
+          
+              var x=document.getElementsByClassName("demo")[0].innerHTML="Text Changed";
+      
+      }
+          </script>  -->
+    
+    
+    
+    
+    
+    <!-- //////////////css selector////////////// -->
+    
+    
+    
+    
+         <!-- <p  class="demo">Change the javascript text</p>
+         <p  id="demo">Change the javascript text</p>
+    
+        <button  onclick="callFunction()">Click</button>
+      
+          <script>
+      
+      
+      function callFunction(){
+      
+      
+      
+          
+            //   var x=document.getElementsByClassName("demo")[0].innerHTML="Text Changed";
+            document.querySelector("#demo").innerHTML = "Hello World!";
+      
+      }
+          </script> 
+        
+    </body>
+    </html> --> 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+<!-- Enter 1st number<input type="text"  id="one" onchange="myFunction()"><br><br> -->
+
+Enter 1st number <input type="text" id="one"  onchange="myFunction(),sumTwo()">
+
+Enter the 2nd number<input type="text"  id="two"  onchange="myFunction(),sumTwo()"><br><br>
+
+  First Number is:-<div  id="myDiv1"></div>
+ Second Number is:-<div  id="myDiv2"></div>
+  Sum is:-<div  id="myDiv3"></div>
+
+<!-- <button  onclick="addFunction()">Add Me</button> -->
+
+
+<script>
+// function addFunction(){
+// // alert("add");
+
+
+// // else{
+
+//       var a=parseInt(document.getElementById("one").value);
+//   var b=parseInt(document.getElementById("two").value);
+// //   var nanValue = NaN;
+// // if(isNaN(a)){
+
+// //       alert("Enter the 1st number");
+// //       return;
+// //   }
+
+// //     if(isNaN(b)){
+
+// // alert("Enter the 2nd number")
+// // }
+
+// // else{
+
+// // alert(a+b);
+// // }
+
+
+
+// }
+
+
+function myFunction(){
+
+ 
+    // document.getElementById("one").value = "";
+    // alert("Enter the 1st Number");
+    console.log("llll");
+    // document.getElementById("div1").style.display = "block";
+    var a=parseInt(document.getElementById("one").value);
+
+    // document.getElementById("div1") ="rahul";
+    document.getElementById("myDiv1").innerHTML = a;
+    // document.getElementById("myDiv2").innerHTML = b;
+
+       var b=parseInt(document.getElementById("two").value);
+     document.getElementById("myDiv2").innerHTML = b;
+
+
+}
+
+// function sumFunction(){
+
+//      var b=parseInt(document.getElementById("two").value);
+//      document.getElementById("myDiv2").innerHTML = b;
+// }
+
+function sumTwo(){
+
+    // alert("sum is")
+    var a=parseInt(document.getElementById("one").value);
+    var b=parseInt(document.getElementById("two").value);
+
+    var c=a+b;
+
+      document.getElementById("myDiv3").innerHTML = c;
+    
+}
+
+// function sumTow(){
+
+//     var c=a+b;
+//     alert(c)
+// }
+
+// alert(a+b)
+  
+// }
+ </script>
+        
+    </body>
+    </html>

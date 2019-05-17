@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+</head>
+<body>
+
+
+    <select  id="demo"  class="ui dropdown"></select>
+        <!-- <div class="ui dropdown">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon"></i>
+                <div class="default text">Gender</div>
+                <div class="menu"  id="selectNumber">
+                  <div class="item" data-value="male">Male</div>
+                  <div class="item" data-value="female">Female</div>
+                </div>
+              </div>
+
+
+<script>
+
+    $('.ui.dropdown')
+  .dropdown()
+
+
+; -->
+
+<script>
+        $('.ui.dropdown')
+  .dropdown()
+
+
+;
+
+    var arr=["Javascript","Java","Html"];
+     var arr1= document.getElementById("demo");
+
+     for(var i=0;i<arr.length;i++){
+
+        var opt=document.createElement('option');
+        opt.innerHTML=arr[i];
+        opt.value=arr[i];
+        arr1.appendChild(opt);
+   
+     }
+
+
+
+
+
+
+    </script>
+        
+    
+</body>
+</html>
